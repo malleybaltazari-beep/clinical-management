@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="#009688">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="Add Doctor"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- FORM -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Profile"
+                android:textColor="#17202A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="Enter the doctor's personal and professional information"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+
+            <!-- FULL NAME -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter doctor's full name"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- GENDER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Gender"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+
+            <!-- PHONE NUMBER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Phone Number"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- SPECIALIZATION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Specialization"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="e.g. Cardiologist, Surgeon"
+                android:inputType="textCapSentences"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- DEPARTMENT -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Department"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="e.g. Cardiology, Emergency"
+                android:inputType="textCapSentences"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- MEDICAL LICENSE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Medical License Number"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter medical license number"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- ACCOUNT SECTION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Login Account"
+                android:textColor="#17202A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create login credentials for the doctor"
+                android:textColor="#777777"
+                android:textSize="13sp" />
+
+
+            <!-- USERNAME -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter doctor username"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- EMAIL -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Email"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter doctor email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Password"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Confirm Password"
+                android:textColor="#17202A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+
+            <!-- CREATE BUTTON -->
+
+            <Button
+                android:id="@+id/btnCreateDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Create Doctor Account"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#009688" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

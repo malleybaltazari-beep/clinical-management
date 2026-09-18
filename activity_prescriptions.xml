@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#009688">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescriptions"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Prescription"
+            android:textColor="#17202A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp" />
+
+        <!-- PATIENT NAME -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edtPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter patient name"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- MEDICINE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/edtMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter medicine name"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- DOSAGE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosage"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/edtDosage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. 500 mg"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- FREQUENCY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequency"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/edtFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. Twice a day"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- DURATION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/edtDuration"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. 7 days"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- INSTRUCTIONS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/edtInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:hint="Enter instructions for the patient"
+            android:gravity="top"
+            android:padding="15dp"
+            android:inputType="textMultiLine"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btnSavePrescription"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Prescription"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#009688"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="25dp" />
+
+        <!-- SAVED PRESCRIPTIONS TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Prescriptions"
+            android:textColor="#17202A"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp" />
+
+        <!-- PRESCRIPTION CONTAINER -->
+        <LinearLayout
+            android:id="@+id/prescriptionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

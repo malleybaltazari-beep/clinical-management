@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:padding="25dp">
+    <ImageView
+        android:id="@+id/clinicalLogo"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/clinical_logo"
+        android:contentDescription="Clinical Patient Management System Logo"
+        android:scaleType="fitCenter" />
+
+
+
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Clinical"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#123B5D"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage patients, appointments and medical records easily and securely."
+        android:textSize="15sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="30dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="GET STARTED   →"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#087FC1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="90dp"
+        android:elevation="5dp" />
+
+</LinearLayout>

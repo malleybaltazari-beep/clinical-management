@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ========================= -->
+        <!-- TOP BAR                   -->
+        <!-- ========================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#009688">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@android:color/white"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Medical Results"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- ========================= -->
+        <!-- CONTENT                   -->
+        <!-- ========================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Medical Results"
+                android:textColor="#17202A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter patient's medical information"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- Patient ID -->
+
+            <EditText
+                android:id="@+id/edtPatientId"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Patient ID"
+                android:inputType="number"
+                android:padding="12dp" />
+
+
+            <!-- Diagnosis -->
+
+            <EditText
+                android:id="@+id/edtDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Diagnosis"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Laboratory Results -->
+
+            <EditText
+                android:id="@+id/edtLaboratoryResults"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Laboratory Results"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Doctor Notes -->
+
+            <EditText
+                android:id="@+id/edtDoctorNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Doctor Notes"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Treatment -->
+
+            <EditText
+                android:id="@+id/edtTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Treatment"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Record Date -->
+
+            <EditText
+                android:id="@+id/edtRecordDate"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Record Date (e.g. 08/09/2026)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Save -->
+
+            <Button
+                android:id="@+id/btnSaveMedicalRecord"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Save Medical Results"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#009688"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

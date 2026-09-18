@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="#FFFFFF">
+
+    <!-- ========================= -->
+    <!-- PATIENT NAME -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient: John Peter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+
+    <!-- ========================= -->
+    <!-- PATIENT ID -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtPatientId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient ID: 1"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="5dp" />
+
+    <!-- ========================= -->
+    <!-- DOCTOR NAME -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor: Dr. James"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="5dp" />
+
+    <!-- ========================= -->
+    <!-- APPOINTMENT DATE -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtAppointmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 08/09/2026"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="5dp" />
+
+    <!-- ========================= -->
+    <!-- APPOINTMENT TIME -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtAppointmentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: 10:00"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="5dp" />
+
+    <!-- ========================= -->
+    <!-- REASON -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reason: Medical Checkup"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="5dp" />
+
+    <!-- ========================= -->
+    <!-- STATUS -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginTop="8dp" />
+
+    <!-- ========================= -->
+    <!-- UPDATE STATUS BUTTON -->
+    <!-- ========================= -->
+
+    <Button
+        android:id="@+id/btnUpdateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Status"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#009688"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

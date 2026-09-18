@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- TOP BAR -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#009688">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back"
+            android:tint="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Control"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+
+    <!-- CONTENT -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- DESCRIPTION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Roles and Permissions"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#17202A"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The following permissions define what each user role can access in the system."
+                android:textSize="14sp"
+                android:textColor="#607D8B"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!-- ADMIN -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADMIN"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#009688"/>
+
+                <TextView
+                    android:id="@+id/txtAdminAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#17202A"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!-- DOCTOR -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOCTOR"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#009688"/>
+
+                <TextView
+                    android:id="@+id/txtDoctorAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#17202A"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!-- RECEPTIONIST -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECEPTIONIST"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#009688"/>
+
+                <TextView
+                    android:id="@+id/txtReceptionistAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#17202A"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!-- PATIENT -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PATIENT"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#009688"/>
+
+                <TextView
+                    android:id="@+id/txtPatientAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#17202A"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

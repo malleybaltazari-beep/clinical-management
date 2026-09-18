@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/txtPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textColor="#17202A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPatientId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient ID: 1"
+        android:textColor="#009688"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtPatientPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: 0712345678"
+        android:textColor="#777777"
+        android:textSize="13sp"
+        android:layout_marginTop="3dp" />
+
+</LinearLayout>

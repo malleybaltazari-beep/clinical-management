@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP BAR -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#009688">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Patient"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Registration"
+            android:textColor="#17202A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter patient's information"
+            android:textColor="#777777"
+            android:textSize="13sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <!-- FIRST NAME -->
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="First Name *"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp" />
+
+
+        <!-- MIDDLE NAME -->
+
+        <EditText
+            android:id="@+id/edtMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Middle Name"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- LAST NAME -->
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Last Name *"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- DATE OF BIRTH -->
+
+        <EditText
+            android:id="@+id/edtDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Date of Birth *"
+            android:inputType="date"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- PHONE -->
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Phone Number *"
+            android:inputType="phone"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- ADDRESS -->
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:hint="Address"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- BLOOD GROUP -->
+
+        <EditText
+            android:id="@+id/edtBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Blood Group"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- SAVE BUTTON -->
+
+        <Button
+            android:id="@+id/btnSavePatient"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Patient"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#009688"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
